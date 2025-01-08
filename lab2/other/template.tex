@@ -1,0 +1,89 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% README %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 关于本模板的使用方式：
+% 1. 此模板只是提供了一个大致的课程报告写作框架，并不刻板地要求必须按照所示的布局写作，但是请包含此模板中要求的内容。换言之，此模板中要求的内容需要是你的报告内容的子集；
+% 2. 我们鼓励大家详细（但不是枚举式）地汇报实验结果，并对结果进行分析；
+% 3. 在完成实验报告时，也请参考相应的实验要求 PPT；
+% 4. 如有疑问，欢迎询问助教！
+% 
+% DDL：2025 年 1 月 10 日
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+\usepackage{ctex,multicol,amsmath,amsfonts,mathrsfs,amsthm,amssymb,geometry,graphicx,listings}
+
+% 如需插入伪代码，请 uncomment 下面这行；关于LaTeX中插入伪代码的参考资料：https://zhuanlan.zhihu.com/p/266241159
+% \usepackage{algorithm, algorithmic}
+
+\geometry{a4paper,scale=0.78}
+
+\title{运筹学实验报告 - 问题编号}
+
+\author{姓名\quad 学号}
+
+\date{\today}
+
+% 如需插入代码，推荐使用 listings 环境（已经 usepackage 了），具体使用方式可参考博客：https://blog.csdn.net/horsee/article/details/128623180
+% 代码请勿大段插入，必要时只需要插入关键代码即可；如果描述得足够清晰可以不插代码
+% 下面是一个 listings 环境的配置示例：
+\lstset{
+	basicstyle          =   \ttfamily,          % 基本代码风格
+	keywordstyle        =   \bfseries,          % 关键字风格
+	commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+	stringstyle         =   \ttfamily,  		% 字符串风格
+	xleftmargin         =   4pt,
+	flexiblecolumns,                
+	numbers             =   left,   			% 行号的位置在左边
+	showspaces          =   false,  			% 是否显示空格，显示了有点乱，所以不现实了
+	numberstyle         =   \zihao{-5}\ttfamily,% 行号的样式，小五号，tt等宽字体
+	showstringspaces    =   false,
+	captionpos          =   t,      			% 这段代码的名字所呈现的位置，t指的是top上面
+	frame               =   lrtb,   			% 显示边框
+}
+
+\lstdefinestyle{C++}{	% 这里也要记得改成对应的编程语言
+	language        =   C++, 					% 编程语言，以 C++ 为例
+	basicstyle      =   \zihao{-5}\ttfamily,
+	numberstyle     =   \zihao{-5}\ttfamily,
+	keywordstyle    =   \color{blue},
+	keywordstyle    =   [2] \color{teal},
+	stringstyle     =   \color{magenta},
+	commentstyle    =   \color{red}\ttfamily,
+	breaklines      =   true,   				% 自动换行，建议不要写太长的行
+	columns         =   fixed,  				% 如果不加这一句，字间距就不固定，很丑，必须加
+	% basewidth       =   0.5em,
+}
+
+\begin{document}
+
+	\maketitle
+
+	\section{问题背景}
+
+	在这一节中，请清晰、简要地阐述本实验所研究的问题。
+
+	\section{算法介绍}
+
+	请介绍实验中使用到的算法，可以使用文字描述、流程图、伪代码等方式；表述清晰直观即可。可以分小节进行阐述。
+
+	还可以介绍自己在实验中遇到的难点（如果有的话）、如何解决、做了什么优化，etc。如果有自己独到的技巧或者创新，欢迎在这里呈现。
+
+	\section{实验结果}
+
+	展示实验结果，推荐使用表格、图片等方式；实验中的图（误差曲线、准确率曲线等）请保证清晰度（请勿直接截图，否则会导致清晰度较低）。
+	
+	请按照实验要求 PPT， 对你的实验结果进行分析。
+
+	\section{总结}
+
+	总结本次实验，研究了什么问题，得到了什么结果，仍然存在哪些不足，etc。
+
+	
+	% 如果需要引用，请 uncomment 如下两行
+	% \bibliography{your-ref-file-name}
+	% \bibliographystyle{plain}
+
+\end{document}
