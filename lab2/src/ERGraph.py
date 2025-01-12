@@ -51,7 +51,7 @@ class Graph:
             _, s, _ = np.linalg.svd(self.L)
             s.sort()
             if s[1] > 0.01:
-                print(f'The connected Erdos-Renyi graph is generated. Algebraic Connectivity: {s[1]:.3f}, size of {self.N}')
+                # print(f'The connected Erdos-Renyi graph is generated. Algebraic Connectivity: {s[1]:.3f}, size of {self.N}')
                 break
 
     def complete(self):
